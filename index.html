@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Happy BirthDay!!</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
+</head>
+
+<body id="page-top">
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Happy Birthday Kriti!</a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<header>
+		
+        <div id="mainDiv">
+			<div id="content">
+				<div id="code">
+					<span class="comments">Hi</span><br />
+					<span class="space"/><span class="comments">Today, the 16th day of August, is your birthday.</span><br />
+					<span class="space"/><span class="comments">So I wanted to give a personal touch to the wishes I want to give you on this extraordinary day.</span><br />
+					<span class="space"/><span class="comments"></span><br />
+					<span class="comments">My blessings will be with you always.</span><br />
+					<span class="comments">Forever and ever. I wish</span><br />
+					<span class="string">luckiness...</span><br />
+					<span class="string">happiness...</span><br />
+					<span class="string">success...</span><br />
+					<span class="string">and everything you wish can be achieved...</span><br />
+					<span class="comments">Stay awesome, stay the way you are. I am blessed that there is a day called your birthday</span><br />
+					<span class="comments">- The day because of which I met my soulmate. You are very precious to me, your presence in my life is divine and it feels wonderful to have such an amazing person by my side</span><br />
+					<span class="comments">The last thing I wanna say, boring and ordinary, is:</span><br />
+					<span class="string">"Happy Birthday !"</span><br />
+					<span class="string">I hope I made it special for you..No? :P Scroll Down...</span><br />
+					<span class="string">.</span><br />
+					<span class="string">.</span><br />
+					<span class="string">.</span><br />
+					<span class="string">.</span><br />
+					<span class="string">.</span><br />
+					
+				</div>
+				<div id="loveHeart">
+					<canvas id="garden"></canvas>
+					<div id="words">
+						<div id="messages">
+						</br>
+						</br>
+							<span class="space"/><span class="space"/>You are spreading happiness since..
+							<div id="elapseClock"></div>
+						</div>
+						<div id="loveu">
+							....Happy 21st Birthday<br/>
+							<div class="signature">I love You Alot.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(1995,8, 16);
+		together.setHours(8);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">I've planned what you need!</h2>
+                    <hr class="light">
+                    <p class="text-faded"> Some "EXTRA WORK" :P , coming to "DELHI SURPRISE", a Birthday Date and a perfect birthday week to make our time happy and memorable. I can do anything to bring a smile on your face because "YOU are the ONE", "YOU are WORTH it", "YOU DESERVE it" , "YOU are soo CUTE and BEAUTIFUL...".</p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Pranay Mathur at Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>With Lots of Love</h3>
+                        <p class="text-muted">YES! Because I LOVE YOU :*</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Surprises</h3>
+                        <p class="text-muted">Yeah, You can take my Delhi Visit and this website as surprise.. :P and maybe...many more suprises..? Who Knows? :P</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>Tasty Food</h3>
+                        <p class="text-muted">Oh yeah! ALOT of tasty food, because why not? That's what we live for, eh? and food tastes best when shared with loved ones. :P</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>Life Long Support</h3>
+                        <p class="text-muted">This one is a little sentimental. Yes I will stay with you always, help you always, care for you always and love you always. and yeah free tech-support too :P</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                        
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-primary" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's have a date tomorrow!</h2>
+                    <hr class="primary">
+                    <p>Haha, the important part about birthdays- going out and making the day special. Yes Mam! I will be there for you tomorrow. :* </p>
+					<p>Be ready beautiful can't wait to see you. <3_<3</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p>Venue: Cafe Diggins</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <p>HAPPY BIRTHDAY AGAIN!</p>
+					<p>Let's make memories to cherish, to long for.</p>
+					<p>Love You!</p>
+					
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
